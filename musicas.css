@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ html {
+    scroll-behavior: smooth;
+ }
+ 
+ body {
+    font-family: 'Segoe UI';
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+ }
+
+ @font-face{
+   font-family: "Principal";
+   src: url(hidayatullah\ DEMO.ttf);
+ 
+ }
+ 
+ :root{
+   /* VARIÁVEIS CSS */
+   --cor1-principal: #A800EB;
+   --cor2-texto: #3e3e3e;
+   --cor3-fundo: #f2f2f2;
+   --cor4-branco: #fff;
+   --cor5-preto: #000;
+   --cor6-fotos: #cccccc;
+   --fonte-destaque: Principal;
+   --fonte-texto: Poppins, 'Segoe UI';
+ }
+
+#conteudo {
+    top: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #000000;
+    margin:auto;
+    margin-bottom: 1px;
+    margin-top: 2px;
+    min-height: 20px;
+ }
+ 
+ #conteudo a {
+    text-decoration: none;
+    color:black;
+ }
+
+.card {
+    width: 250px;
+    height: 385px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 2px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.5s;
+    text-align: center;
+    overflow: hidden;
+ }
+ 
+ .card:hover {
+    width: 300px;
+ }
+ 
+ .card figure {
+    width: 280px;
+    height: 150px;
+    border-radius: 10px;
+ }
+ 
+ .card figure img {
+    width: 280px;
+ }
+ 
+ .card h2, h6{
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    margin-top: 130px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    letter-spacing: 1.5px;
+ }
+ 
+ .card p {
+    font-family: 'Segoe UI';
+    color: rgb(0, 0, 0);
+    text-overflow: clip;
+    margin-top: -10px;
+    padding-bottom: 15px;
+ }
+ 
+ .card h4 {
+     color: red;
+ }
+ 
+ #producoes {
+    height: 900px;
+    background-color: #000000;
+}
+
+#producoes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+
+  /*Estilo dos botões*/
+
+ .botao {
+   align-items: center;
+}
+
+button{
+   background-image: linear-gradient(to right, rgb(0, 0, 0), #00a1be);
+   padding: 20px, 40px;
+   font-size: 24px;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 1.2s;
+}
+
+button:hover, footer a.btn-footer:hover{
+   transform: scale(1.05);
+}

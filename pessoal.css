@@ -1,0 +1,74 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--cor3-fundo);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+@font-face{
+  font-family: "Principal";
+  src: url(hidayatullah\ DEMO.ttf);
+
+}
+
+:root{
+  /* VARIÁVEIS CSS */
+  --cor1-principal: #A800EB;
+  --cor2-texto: #3e3e3e;
+  --cor3-fundo: #f2f2f2;
+  --cor4-branco: #fff;
+  --cor5-preto: #000;
+  --cor6-fotos: #cccccc;
+  --fonte-destaque: Principal;
+  --fonte-texto: Poppins, 'Segoe UI';
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .coluna {
+    flex: 50%;
+    padding: 30vh;
+    box-sizing: border-box;
+  }
+  
+  .texto {
+    background-color: var(--cor3-fundo);
+    justify-content: space-evenly;
+    gap: 2vh;
+    padding: 80px;
+  }
+  
+  .fotos {
+    background-color: var(--cor6-fotos);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vh;
+    padding: 0;
+}
+
+.imagens{
+    width: 170px;
+    height: 170px;
+    border: 8px solid var(--cor4-branco);
+    box-shadow: 5px 5px 5px var(--cor5-preto);
+    transition: trasform .5s linear;
+}
+
+.imagens img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagens:hover{
+    transform: scale(1.3);
+    filter: none;
+}
